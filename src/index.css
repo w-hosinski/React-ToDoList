@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;  
+}
+.boundingBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    font-size: 24px;
+    gap: 10px;
+}
+.listTask {
+    display: flex;
+    width: 260px;
+    flex-direction: column;
+    align-items: center;
+}
+.inputField {
+    font-size: 24px;
+}
+.task {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    width: 260px;
+    justify-content: flex-end;
+    column-gap: 5px;
+}
+.task h4:first-child {
+    margin-right: auto;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
