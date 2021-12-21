@@ -26,10 +26,12 @@
     width: 260px;
     justify-content: flex-end;
     column-gap: 5px;
+    cursor: pointer;
 }
 .task h4:first-child {
     margin-right: auto;
 }
-.strikethrough {
+.strike {
     text-decoration: line-through;
+    text-decoration-thickness: 10%;
 }
