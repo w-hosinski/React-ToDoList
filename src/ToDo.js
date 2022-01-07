@@ -10,7 +10,7 @@ const ToDo = () => {
   }
 
   const updateTasks = () => {
-    setTasks([...tasks, {id: input, name: input, completed: false}])
+    if(input!=="") setTasks([...tasks, {id: input, name: input, completed: false}])
     setInput("")
   }
 
@@ -29,7 +29,7 @@ const ToDo = () => {
   return (
     <div className="boundingBox">
       <input className="inputField" value={input} onChange={(e)=>setInput(e.target.value)}></input>
-      <button className="addTaskBtn" onClick={updateTasks}>Add Task</button>
+      <button className="btn" onClick={updateTasks}>Add Task</button>
       <button className='btn' onClick={removeCompleted}>Clear All Completed</button>
       <button className='btn' onClick={() => setTasks([])}>Clear ALL</button>
       

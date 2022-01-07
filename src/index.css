@@ -35,3 +35,10 @@
     text-decoration: line-through;
     text-decoration-thickness: 10%;
 }
+h4 {
+    max-width: 210px;
+    word-wrap: break-word;
+}
+.btn {
+    font-size: 0.6em;
+}
